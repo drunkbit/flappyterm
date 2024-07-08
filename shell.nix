@@ -43,7 +43,7 @@ let
       export PYTHONPATH=`pwd`/$VENV/${myPython.sitePackages}/:$PYTHONPATH
 
       # installed python packages via pip
-      pip install --disable-pip-version-check keyboard
+      pip install --disable-pip-version-check -r requirements.txt
     '';
   };
 in
